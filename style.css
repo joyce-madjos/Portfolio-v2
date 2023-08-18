@@ -12,10 +12,10 @@
 :root {
   /* Font */
   --name: Antro-Vectra;
-  --heading-font: "Lora", serif, system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
-  --regular-font: "Montserrat", sans-serif, system-ui, -apple-system,
+  --heading-font: "Montserrat", serif, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
+  --regular-font: "Lora", sans-serif, system-ui, -apple-system,
     BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
     "Open Sans", "Helvetica Neue", sans-serif;
 
@@ -31,6 +31,11 @@
   --primary-color: black;
   --secondary-color: white;
   --accent: #4285f4;
+
+  --pink: #e01b6f;
+  --light-pink: #ff94a2;
+  --border-color: #ebe9ef;
+  --mini-background-color: #f9f9f9;
 }
 
 * {
