@@ -1,0 +1,402 @@
+@font-face {
+  font-family: Antro-Vectra;
+  src: url(assets/font/antro_vectra/Antro-Vectra.otf);
+}
+
+@font-face {
+  font-family: Antro-Vectra;
+  src: url(assets/font/antro_vectra/Antro-Vectra-Bolder.otf);
+  font-weight: bold;
+}
+
+:root {
+  /* Font */
+  --name: Antro-Vectra;
+  --heading-font: "Lora", serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  --regular-font: "Montserrat", sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
+
+  --font-size-sm: clamp(0.8rem, 0.15vw + 0.77rem, 0.89rem);
+  --font-size-base: clamp(1rem, 0.31vw + 0.94rem, 1.19rem);
+  --font-size-md: clamp(1.25rem, 0.55vw + 1.14rem, 1.58rem);
+  --font-size-lg: clamp(1.56rem, 0.91vw + 1.38rem, 2.11rem);
+  --font-size-xl: clamp(1.95rem, 1.43vw + 1.67rem, 2.81rem);
+  --font-size-xxl: clamp(2.44rem, 2.18vw + 2.01rem, 3.75rem);
+  --font-size-xxxl: clamp(3.05rem, 3.24vw + 2.4rem, 5rem);
+
+  /* Colors */
+  --primary-color: black;
+  --secondary-color: white;
+  --accent: #4285f4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: var(--regular-font);
+}
+
+nav,
+.hero,
+.education-container,
+.skills-individual-container,
+.works-button,
+.project-individual-container,
+.case-individual-container,
+.get-in-touch-container,
+footer {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+nav,
+main,
+.hero,
+.experience-container,
+.skills,
+.project-container,
+.case-individual-container,
+.get-in-touch-container,
+footer {
+  width: min(50rem, 100%);
+  margin: 1rem auto;
+}
+
+nav {
+  font-family: var(--heading-font);
+  padding: 0.5rem;
+  flex-shrink: 1;
+  border-radius: 1.875rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-button {
+  color: var(--secondary-color);
+  text-decoration: none;
+  padding: 0.5rem 1.3rem;
+}
+
+.nav-button-active,
+.nav-button:hover {
+  border: 1px solid var(--accent);
+  border-radius: 1rem;
+  padding: 0.5rem 1.3rem;
+  background-color: var(--accent);
+  text-align: center;
+}
+
+.nav-button:active {
+  box-shadow: 2px 2px 5px var(--secondary-color);
+}
+
+.hero {
+  border-radius: 1.875rem;
+  min-height: 40vh;
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.hero-name {
+  font-family: var(--name);
+  font-size: var(--font-size-xxxl);
+  margin: 0px;
+}
+
+.education-container {
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.school-logo > img {
+  width: 50px;
+  height: auto;
+}
+
+.school-description {
+  font-family: var(--heading-font);
+  margin-left: 1rem;
+}
+
+.school-description > h3 {
+  margin: 0;
+}
+
+.school-description > p {
+  margin: 0;
+}
+
+.experience-container {
+  display: flex;
+  font-family: var(--heading-font);
+}
+
+.experience-title {
+  background-color: var(--accent);
+  color: var(--secondary-color);
+  display: flex;
+  padding: 1rem;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.experience-title-card {
+  display: flex;
+  align-items: center;
+}
+
+.company > img {
+  width: 50px;
+  height: auto;
+}
+
+.title {
+  padding: 1rem;
+}
+
+.title > h3 {
+  font-size: var(--font-size-md);
+  display: block;
+}
+
+.title > h3,
+.title > p {
+  margin: 0;
+}
+
+.experience-description {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  flex: 1;
+  border-radius: 0 1rem 1rem 0;
+  padding: 1rem;
+}
+
+.experience-skills {
+  display: flex;
+  gap: 1rem;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.skills-individual-container {
+  flex: 0 1 8.5rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  height: 11.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-circle-container {
+  margin-top: 1rem;
+}
+
+.skill-circle {
+  width: 6.5rem;
+  height: 6.5rem;
+  border-radius: 4rem;
+  background-color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills-image {
+  width: 4rem;
+  height: auto;
+}
+
+.skill-title-container {
+  width: 100%;
+  padding-left: 0.8rem;
+}
+
+.skill-title {
+  text-align: left;
+}
+
+.works-button-active,
+.works-button {
+  font-family: var(--heading-font);
+  padding: 0.5rem 1.3rem;
+  border-radius: 1.875rem;
+}
+
+.works-button-active {
+  background-color: var(--accent);
+}
+
+.project-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.project-individual-container {
+  border-radius: 0.5rem;
+  flex: 0 1 20rem;
+}
+
+.project-image {
+  max-width: 320px;
+  height: auto;
+}
+
+.medgrocer {
+  height: 250px;
+  text-align: center;
+}
+
+.medgrocer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-title,
+.portfolio-subtitle,
+.portfolio-body {
+  margin: 0;
+  padding: 2px 1rem;
+}
+
+.portfolio-title {
+  font-family: var(--heading-font);
+  font-size: var(--font-size-md);
+  font-size: 30px;
+}
+
+.portfolio-subtitle,
+.portfolio-body {
+  font-family: var(--regular-font);
+  font-size: 12px;
+  color: #aaaaaa;
+}
+
+.portfolio-body {
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.case-individual-container {
+  border-radius: 1rem;
+  padding: 1rem 1.5rem;
+}
+
+.case-title {
+  font-family: var(--heading-font);
+  font-size: var(--font-size-lg);
+  margin: 0;
+}
+
+.case-subtitle {
+  font-size: var(--font-size-sm);
+}
+
+.get-in-touch-container {
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-content: stretch;
+  flex-wrap: wrap;
+}
+
+.message-me,
+.links {
+  flex: 1;
+}
+
+fieldset {
+  padding: 2rem;
+  width: 20rem;
+}
+
+.form-inline {
+  margin: 1rem 0;
+}
+
+.form-inline > input {
+  font-family: var(--regular-font);
+  width: 100%;
+  display: block;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+}
+
+.form-inline > label > span {
+  color: rgb(214, 100, 100);
+}
+
+textarea {
+  font-family: var(--regular-font);
+  max-width: 320px;
+  min-width: 320px;
+  border-radius: 0.2rem;
+  font-size: 13px;
+}
+
+.links {
+  padding-left: 3rem;
+}
+
+.links > a {
+  display: block;
+  margin: 1rem 0;
+  text-decoration: none;
+}
+
+.links > a:visited {
+  color: var(--accent);
+}
+
+fieldset > button {
+  padding: 0.8rem 2rem;
+  width: 100%;
+  font-family: var(--regular-font);
+  background-color: var(--accent);
+  color: var(--secondary-color);
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+button {
+  border-style: none;
+}
+
+footer {
+  padding: 0.1rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+footer > p > a {
+  text-decoration: none;
+  color: var(--accent);
+}
+@media screen and (max-width: 768px) {
+  .experience-container {
+    flex-direction: column;
+  }
+  .experience-title,
+  .experience-description {
+    border-radius: 0;
+  }
+}
