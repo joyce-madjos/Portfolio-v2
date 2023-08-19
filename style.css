@@ -223,11 +223,20 @@ nav > img {
   margin: 0;
 }
 
+.experience-container {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: auto;
+  /* height: auto; */
+}
+
 .experience-individual-container {
   display: flex;
   flex-direction: column;
   font-family: var(--heading-font);
   margin: 1rem;
+  flex-grow: 1;
+  flex-basis: 500px;
   /* width: min(320px, 100%); */
 }
 
@@ -282,7 +291,7 @@ nav > img {
 } */
 
 .title h3:nth-child(2) {
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-sm);
 }
 
 .title > h3,
@@ -304,6 +313,7 @@ nav > img {
   margin: 0;
   color: var(--primary-color);
   flex: 1;
+  padding: 0 1rem;
   display: none;
 }
 
@@ -519,8 +529,8 @@ footer > p > a {
 @media screen and (max-width: 768px) {
   /* .experience-container {
     flex-direction: column;
-  }
-  .experience-title,
+  } */
+  /* .experience-title,
   .experience-description {
     border-radius: 0;
   } */
