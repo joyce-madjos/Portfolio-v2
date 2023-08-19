@@ -48,6 +48,18 @@ body {
   font-family: var(--regular-font);
 }
 
+.headings {
+  font-family: var(--heading-font);
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+}
+
+.subheadings {
+  font-family: var(--heading-font);
+  font-size: var(--font-size-md);
+  font-weight: 400;
+}
+
 .education-container,
 .skills-individual-container,
 .works-button,
@@ -196,6 +208,8 @@ nav > img {
 
 .school-description > h3 {
   margin: 0;
+  font-family: var(--heading-font);
+  font-weight: 700;
 }
 
 .school-description > p {
