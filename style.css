@@ -62,7 +62,6 @@ body {
 }
 
 .box,
-.skills-individual-container,
 .works-button,
 .project-individual-container,
 .case-individual-container,
@@ -77,7 +76,6 @@ footer {
 }
 
 main,
-.skills,
 .project-container,
 .case-individual-container,
 .get-in-touch-container,
@@ -324,18 +322,18 @@ nav > img {
 
 .skills {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   flex-wrap: wrap;
 }
 
 .skills-individual-container {
-  flex: 0 1 8.5rem;
+  flex: 1;
   margin-bottom: 1rem;
-  border-radius: 0.5rem;
   height: 11.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* border: 1px solid pink; */
 }
 
 .skill-circle-container {
@@ -346,7 +344,7 @@ nav > img {
   width: 6.5rem;
   height: 6.5rem;
   border-radius: 4rem;
-  background-color: var(--secondary-color);
+  background-color: var(--mini-background-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -359,11 +357,11 @@ nav > img {
 
 .skill-title-container {
   width: 100%;
-  padding-left: 0.8rem;
+  /* padding-left: 0.8rem; */
 }
 
 .skill-title {
-  text-align: left;
+  text-align: center;
 }
 
 .works-button-active,
