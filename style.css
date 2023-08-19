@@ -19,13 +19,13 @@
     BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
     "Open Sans", "Helvetica Neue", sans-serif;
 
-  --font-size-sm: clamp(0.8rem, 0.15vw + 0.77rem, 0.89rem);
-  --font-size-base: clamp(1rem, 0.31vw + 0.94rem, 1.19rem);
-  --font-size-md: clamp(1.25rem, 0.55vw + 1.14rem, 1.58rem);
-  --font-size-lg: clamp(1.56rem, 0.91vw + 1.38rem, 2.11rem);
-  --font-size-xl: clamp(1.95rem, 1.43vw + 1.67rem, 2.81rem);
-  --font-size-xxl: clamp(2.44rem, 2.18vw + 2.01rem, 3.75rem);
-  --font-size-xxxl: clamp(3.05rem, 3.24vw + 2.4rem, 5rem);
+  --font-size-sm: clamp(0.8rem, 0.34vw + 0.72rem, 0.98rem);
+  --font-size-base: clamp(1rem, 0.57vw + 0.86rem, 1.31rem);
+  --font-size-md: clamp(1.25rem, 0.91vw + 1.02rem, 1.75rem);
+  --font-size-lg: clamp(1.56rem, 1.4vw + 1.21rem, 2.33rem);
+  --font-size-xl: clamp(1.95rem, 2.1vw + 1.43rem, 3.11rem);
+  --font-size-xxl: clamp(2.44rem, 3.1vw + 1.67rem, 4.14rem);
+  --font-size-xxxl: clamp(3.05rem, 4.49vw + 1.93rem, 5.52rem);
 
   /* Colors */
   --primary-color: black;
@@ -137,8 +137,13 @@ nav > img {
 
 .poem {
   font-family: var(--regular-font);
+  font-size: var(--font-size-base);
   /* margin: 0; */
   /* border: 1px solid green; */
+}
+
+.poem > span {
+  display: block;
 }
 
 .hero-box p:last-child {
@@ -460,7 +465,9 @@ footer > p > a {
     border-radius: 0;
   }
 
-  .hero {
-    position: static;
+  .hero-box {
+    box-shadow: none;
+    margin: 2rem;
+    background: rgba(255, 255, 255, 0.5);
   }
 }
