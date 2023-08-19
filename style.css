@@ -61,7 +61,7 @@ body {
   margin: 1rem 1rem 0 1rem;
 }
 
-.education,
+.education-box,
 .skills-individual-container,
 .works-button,
 .project-individual-container,
@@ -79,8 +79,9 @@ main,
 .case-individual-container,
 .get-in-touch-container,
 footer {
-  width: min(80rem, 100%);
-  margin: 1rem auto;
+  /* width: min(80rem, 99%); */
+  /* margin: 1rem auto; */
+  margin: 0 1rem;
 }
 
 nav {
@@ -159,6 +160,7 @@ nav > img {
   display: block;
 }
 
+.hero-box p:nth-child(5),
 .hero-box p:last-child {
   margin: 0;
 }
@@ -485,5 +487,8 @@ footer > p > a {
     box-shadow: none;
     margin: 2rem;
     background: rgba(255, 255, 255, 0.5);
+  }
+  main {
+    margin: 0 1rem;
   }
 }
