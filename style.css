@@ -77,12 +77,7 @@ footer {
 }
 
 main,
-.project-container,
-.case-individual-container,
-.get-in-touch-container,
 footer {
-  /* width: min(80rem, 99%); */
-  /* margin: 1rem auto; */
   margin: 0 1rem;
 }
 
@@ -387,11 +382,20 @@ nav > img {
   justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
+  border: 1px solid pink;
+}
+
+.projects-container > p {
+  color: var(--pink);
+  font-family: var(--regular-font);
+  font-weight: 700;
+  margin: 1rem 0;
 }
 
 .project-individual-container {
   border-radius: 0.5rem;
-  flex: 0 1 20rem;
+  flex: 0 1 25rem;
+  /* background-color: #4285f4; */
 }
 
 .project-image {
