@@ -66,8 +66,7 @@ body {
 .works-button,
 .project-individual-container,
 .case-individual-container,
-.get-in-touch-container,
-footer {
+.get-in-touch-container {
   border-radius: 0.625rem;
   border: 2px solid var(--border-color);
 }
@@ -529,6 +528,8 @@ footer {
   padding: 0.1rem;
   border-radius: 1rem;
   text-align: center;
+  margin: 1rem;
+  /* border: 1px solid yellow; */
 }
 
 footer > p > a {
