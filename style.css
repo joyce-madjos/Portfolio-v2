@@ -52,6 +52,7 @@ body {
   font-family: var(--heading-font);
   font-size: var(--font-size-lg);
   font-weight: 700;
+  margin: 1rem 0;
 }
 
 .subheadings {
@@ -135,8 +136,8 @@ nav > img {
   /* border: 10px solid pink; */
   /* position: relative; */
   /* height: min(800px, 100%); */
-  display: flex;
   /* justify-content: flex-start; */
+  display: flex;
   align-items: center;
   border: 1px solid pink;
   background-image: url(assets/crop-2-wallpaper.gif);
@@ -154,6 +155,7 @@ nav > img {
 .poem {
   font-family: var(--regular-font);
   font-size: var(--font-size-base);
+  margin: 1rem 0;
   /* margin: 0; */
   /* border: 1px solid green; */
 }
@@ -165,6 +167,10 @@ nav > img {
 .hero-box p:nth-child(5),
 .hero-box p:last-child {
   margin: 0;
+}
+
+.hero-box p:first-child {
+  font-weight: bold;
 }
 
 .hero-box {
@@ -197,8 +203,8 @@ nav > img {
 .education-container {
   display: flex;
   align-items: center;
-  /* border-radius: 1rem; */
   padding: 1rem;
+  /* border-radius: 1rem; */
 }
 
 .school-logo > img {
