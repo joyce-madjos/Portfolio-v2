@@ -374,6 +374,13 @@ nav > img {
   background-color: var(--accent);
 }
 
+.projects-container > p {
+  color: var(--pink);
+  font-family: var(--regular-font);
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
 .project-container {
   display: flex;
   justify-content: center;
@@ -382,17 +389,27 @@ nav > img {
   border: 1px solid pink;
 }
 
-.projects-container > p {
-  color: var(--pink);
-  font-family: var(--regular-font);
-  font-weight: 700;
-  margin: 1rem 0;
-}
-
 .project-individual-container {
   border-radius: 0.5rem;
   flex: 0 1 25rem;
   /* background-color: #4285f4; */
+}
+
+.portfolio-description {
+  display: flex;
+  align-items: start;
+  border: 2px solid green;
+}
+
+.right {
+  border: 1px solid black;
+}
+
+.icons {
+  display: flex;
+  margin-top: 1rem;
+  gap: 1rem;
+  color: var(--pink);
 }
 
 .project-image {
@@ -444,6 +461,11 @@ nav > img {
 .portfolio-title,
 .portfolio-body {
   font-family: var(--regular-font);
+}
+
+.award {
+  width: 100px;
+  height: auto;
 }
 
 .case-individual-container {
