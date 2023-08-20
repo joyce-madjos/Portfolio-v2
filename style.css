@@ -383,15 +383,16 @@ nav > img {
 
 .project-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 1rem;
-  border: 1px solid pink;
 }
 
 .project-individual-container {
   border-radius: 0.5rem;
   flex: 0 1 25rem;
+  display: flex;
+  flex-direction: column;
   /* background-color: #4285f4; */
 }
 
@@ -406,7 +407,13 @@ nav > img {
   margin: 0;
   padding: 2px 1rem 2rem 1rem;
   position: relative;
-  border: 1px solid pink;
+  /* border: 1px solid pink; */
+}
+
+.not-medgrocer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .right {
@@ -428,11 +435,11 @@ nav > img {
 }
 
 .project-image {
-  max-width: 320px;
-  height: auto;
+  width: auto;
+  height: 250px;
 }
 
-.medgrocer {
+.medgrocer-image {
   height: 250px;
   text-align: center;
 }
@@ -448,14 +455,12 @@ nav > img {
   text-transform: uppercase;
 }
 
-.portfolio-body,
 .tech {
   margin: 1rem 0;
 }
 
 .portfolio-subtitle {
   font-size: var(--font-size-md);
-  border: 1px solid yellow;
 }
 
 .portfolio-subtitle,
@@ -487,19 +492,48 @@ nav > img {
   /* border: 1px solid black; */
 }
 
+.portfolio-subtitle > span {
+  display: block;
+}
+
 .case-individual-container {
-  border-radius: 1rem;
+  /* border-radius: 1rem; */
   padding: 1rem 1.5rem;
+  display: flex;
+}
+
+.case-description {
+  /* border: 2px solid blue; */
+  width: 75%;
 }
 
 .case-title {
   font-family: var(--heading-font);
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-md);
   margin: 0;
+  font-weight: 700;
 }
 
 .case-subtitle {
+  font-family: var(--regular-font);
   font-size: var(--font-size-sm);
+  margin: 1rem 0;
+}
+
+.button-container {
+  flex: 1;
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-container > button {
+  padding: 1rem 2rem;
+  font-family: var(--heading-font);
+  font-weight: 700;
+  border-radius: 0.5rem;
+  background-color: var(--light-pink);
 }
 
 .get-in-touch-container {
@@ -590,5 +624,21 @@ footer > p > a {
     box-shadow: none;
     margin: 2rem;
     background: rgba(255, 255, 255, 0.5);
+  }
+  .case-individual-container {
+    flex-direction: column;
+  }
+  .button-container > button {
+    padding: 0.3rem 1rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    border: 1px solid var(--light-pink);
+    background-color: var(--secondary-color);
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .project-container {
+    justify-content: center;
   }
 }
