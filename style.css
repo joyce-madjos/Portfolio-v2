@@ -397,19 +397,34 @@ nav > img {
 
 .portfolio-description {
   display: flex;
+  flex-direction: column;
   align-items: start;
   border: 2px solid green;
 }
 
+.portfolio-details {
+  margin: 0;
+  padding: 2px 1rem 2rem 1rem;
+  position: relative;
+  border: 1px solid pink;
+}
+
 .right {
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
 }
 
 .icons {
   display: flex;
-  margin-top: 1rem;
+  margin: 1rem;
   gap: 1rem;
   color: var(--pink);
+  position: absolute;
+  right: 5px;
+  bottom: 10px;
 }
 
 .project-image {
@@ -428,11 +443,6 @@ nav > img {
   align-items: center;
 }
 
-.portfolio-details {
-  margin: 0;
-  padding: 2px 1rem 2rem 1rem;
-}
-
 .portfolio-title {
   font-size: var(--font-size-sm);
   text-transform: uppercase;
@@ -445,7 +455,7 @@ nav > img {
 
 .portfolio-subtitle {
   font-size: var(--font-size-md);
-  /* text-align: justify; */
+  border: 1px solid yellow;
 }
 
 .portfolio-subtitle,
@@ -463,9 +473,18 @@ nav > img {
   font-family: var(--regular-font);
 }
 
+.award-container {
+  display: flex;
+  /* border: 2px solid orange; */
+  padding: 0;
+  align-items: center;
+}
+
 .award {
   width: 100px;
   height: auto;
+  margin: 0;
+  /* border: 1px solid black; */
 }
 
 .case-individual-container {
