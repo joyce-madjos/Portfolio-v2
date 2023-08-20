@@ -411,29 +411,39 @@ nav > img {
   align-items: center;
 }
 
-.portfolio-title,
-.portfolio-subtitle,
-.portfolio-body {
+.portfolio-details {
   margin: 0;
-  padding: 2px 1rem;
+  padding: 2px 1rem 2rem 1rem;
 }
 
 .portfolio-title {
-  font-family: var(--heading-font);
+  font-size: var(--font-size-sm);
+  text-transform: uppercase;
+}
+
+.portfolio-body,
+.tech {
+  margin: 1rem 0;
+}
+
+.portfolio-subtitle {
   font-size: var(--font-size-md);
-  font-size: 30px;
+  /* text-align: justify; */
 }
 
 .portfolio-subtitle,
-.portfolio-body {
-  font-family: var(--regular-font);
-  font-size: 12px;
-  color: #aaaaaa;
+.tech {
+  font-family: var(--heading-font);
+  font-weight: bold;
 }
 
 .portfolio-body {
-  text-transform: uppercase;
-  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+.portfolio-title,
+.portfolio-body {
+  font-family: var(--regular-font);
 }
 
 .case-individual-container {
