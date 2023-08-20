@@ -537,8 +537,7 @@ nav > img {
 }
 
 .get-in-touch-container {
-  padding: 1rem;
-  border-radius: 1rem;
+  padding: 1.5rem;
   display: flex;
   justify-content: space-between;
   align-content: stretch;
@@ -548,11 +547,6 @@ nav > img {
 .message-me,
 .links {
   flex: 1;
-}
-
-fieldset {
-  padding: 2rem;
-  width: 20rem;
 }
 
 .form-inline {
@@ -593,7 +587,7 @@ textarea {
   color: var(--accent);
 }
 
-fieldset > button {
+form > button {
   padding: 0.8rem 2rem;
   width: 100%;
   font-family: var(--regular-font);
