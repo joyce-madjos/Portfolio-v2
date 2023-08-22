@@ -91,6 +91,13 @@ nav {
   /* border: 10px solid yellow; */
 }
 
+.trigram {
+  color: var(--pink);
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+
 nav > img {
   width: 6.41669rem;
   /* height: 3.25rem; */
@@ -687,10 +694,64 @@ footer > p > a {
     border: 1px solid var(--light-pink);
     background-color: var(--secondary-color);
   }
+  .nav-button {
+    display: none;
+  }
+  .my-logo {
+    margin-right: auto;
+  }
+  .trigram {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 1440px) {
   .project-container {
     justify-content: center;
+  }
+}
+
+/* SIDEBAR */
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
   }
 }

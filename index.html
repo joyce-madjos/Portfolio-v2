@@ -23,12 +23,24 @@
   </head>
   <body>
     <nav>
-      <img src="assets/images/my-logo.png" alt="Logo" />
+      <img class="my-logo" src="assets/images/my-logo.png" alt="Logo" />
       <a class="nav-button nav-button-active" href="#about-me">About Me</a>
       <a class="nav-button" href="#projects">Projects</a>
       <a class="nav-button" href="#case-study">Case Study</a>
       <a class="nav-button" href="#get-in-touch">Get in touch</a>
+      <span class="trigram" onclick="openNav()">&#9776;</span>
     </nav>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+
     <div class="hero">
       <div class="hero-box">
         <p class="poem">The art of the web that I truly love</p>
