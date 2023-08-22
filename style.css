@@ -557,15 +557,6 @@ nav > img {
   /* flex-basis: 500px; */
 }
 
-form {
-  /* width: 100%; */
-  /* background-color: black; */
-}
-
-.links {
-  /* flex: 1; */
-}
-
 .form-inline {
   margin: 1rem 0;
   /* border: 5px solid green; */
@@ -633,6 +624,12 @@ form > button {
 
 button {
   border-style: none;
+}
+
+.link-image {
+  width: 3.10075rem;
+  height: 3.125rem;
+  flex-shrink: 0;
 }
 
 footer {
