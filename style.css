@@ -599,13 +599,16 @@ textarea {
 }
 
 .links {
-  padding-left: 3rem;
+  padding: 2.5rem 0 0 3rem;
+  flex-basis: 100px;
 }
 
 .social-links > a {
   display: block;
   margin: 1rem 0;
   text-decoration: none;
+  color: var(--primary-color);
+  font-family: var(--heading-font);
 }
 
 .links > a:visited {
@@ -651,10 +654,23 @@ footer {
   /* border: 1px solid yellow; */
 }
 
+footer > p {
+  font-family: var(--regular-font);
+  font-weight: 700;
+}
+
 footer > p > a {
   text-decoration: none;
-  color: var(--accent);
+  color: var(--primary-color);
+  /* color: var(--accent); */
 }
+
+@media screen and (max-width: 450px) {
+  .links {
+    padding-left: 0;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .hero-box {
     box-shadow: none;
