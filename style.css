@@ -720,23 +720,32 @@ footer > p > a {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: var(--pink);
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
 }
 
+.sidebar-button {
+  padding: 1rem 1rem 1rem 32px;
+}
+
+.sidebar-button:hover {
+  background-color: #f39bc1;
+}
+
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
+  font-size: var(--font-size-md);
   display: block;
   transition: 0.3s;
+  color: var(--secondary-color);
+  /* border-bottom: 2px solid var(--border-color); */
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: var(--primary-color);
 }
 
 .sidenav .closebtn {
