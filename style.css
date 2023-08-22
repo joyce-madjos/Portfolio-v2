@@ -612,7 +612,7 @@ textarea {
   color: var(--accent);
 }
 
-form > button {
+fieldset > button {
   padding: 0.8rem 2rem;
   width: min(320px, 100%);
   font-family: var(--regular-font);
@@ -626,10 +626,9 @@ button {
   border-style: none;
 }
 
-.link-image {
-  width: 3.10075rem;
-  height: 3.125rem;
-  flex-shrink: 0;
+.links > i {
+  color: var(--pink);
+  display: block;
 }
 
 footer {
