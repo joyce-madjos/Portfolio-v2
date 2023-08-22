@@ -602,7 +602,7 @@ textarea {
   padding-left: 3rem;
 }
 
-.links > a {
+.social-links > a {
   display: block;
   margin: 1rem 0;
   text-decoration: none;
@@ -626,9 +626,25 @@ button {
   border-style: none;
 }
 
-.links > i {
+.social-links {
+  display: flex;
+  /* padding: 1rem; */
+  /* border: 1px solid pink; */
+  /* justify-content: center; */
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.social-links > i {
   color: var(--pink);
-  display: block;
+  display: inline-block;
+  /* margin: 0; */
+  /* padding: 0; */
+  /* border: 6px solid yellow; */
+}
+
+.social-links > a {
+  /* border: 2px solid pink; */
 }
 
 footer {
