@@ -351,6 +351,8 @@ nav > img {
 
 .title h3:nth-child(1) {
   font-size: var(--font-size-md);
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 /* .not-active-experience-title > .experience-title-card > .title h3:nth-child(1) {
@@ -505,8 +507,9 @@ nav > img {
 }
 
 .project-image {
-  width: auto;
+  width: 100%;
   height: 250px;
+  /* margin: 5px 1px 1px 0; */
 }
 
 .medgrocer-image {
@@ -559,7 +562,7 @@ nav > img {
 .award {
   width: 100px;
   height: auto;
-  margin: 0;
+  /* margin: 0; */
   /* border: 1px solid black; */
 }
 
@@ -575,7 +578,7 @@ nav > img {
 
 .case-description {
   /* border: 2px solid blue; */
-  width: 75%;
+  /* width: min(75%, 100%); */
 }
 
 .case-title {
@@ -640,6 +643,8 @@ nav > img {
   /* min-width: 320px; */
   /* width: min(320px, 100%); */
   /* margin: 0 auto; */
+  border: 1px solid var(--light-pink);
+  margin-top: 0.3rem;
   font-family: var(--regular-font);
   font-size: var(--font-size-sm);
   display: block;
@@ -654,6 +659,18 @@ nav > img {
   color: rgb(214, 100, 100);
 }
 
+legend {
+  font-family: var(--heading-font);
+  font-size: var(--font-size-base);
+  font-weight: 700;
+}
+
+label {
+  font-family: var(--heading-font);
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+}
+
 textarea {
   /* border: 5px solid blue; */
   font-family: var(--regular-font);
@@ -662,15 +679,22 @@ textarea {
   display: block;
   resize: vertical;
   width: min(320px, 100%);
-  min-height: 16px;
+  margin-top: 0.3rem;
+  border: 1px solid var(--light-pink);
+
+  /* min-height: 16px; */
   /* max-width: 320px;
   min-width: 320px; */
   /* width: clamp(300px, 320px, 100%); */
 }
+.mini-navbar {
+  padding: 2.5rem 0 0 3rem;
+}
 
 .links {
   padding: 2.5rem 0 0 3rem;
-  flex-basis: 100px;
+  flex: 1;
+  /* flex-basis: 100px; */
 }
 
 .social-links > a {
@@ -679,6 +703,16 @@ textarea {
   text-decoration: none;
   color: var(--primary-color);
   font-family: var(--heading-font);
+  font-size: var(--font-size-base);
+}
+
+.mini-navbar > a {
+  display: block;
+  margin: 1rem 0;
+  text-decoration: none;
+  color: var(--primary-color);
+  font-family: var(--heading-font);
+  font-size: var(--font-size-base);
 }
 
 .links > a:visited {
@@ -688,10 +722,12 @@ textarea {
 fieldset > button {
   padding: 0.8rem 2rem;
   width: min(320px, 100%);
-  font-family: var(--regular-font);
-  background-color: var(--accent);
-  color: var(--secondary-color);
+  font-family: var(--heading-font);
+  font-weight: 700;
+  background-color: var(--light-pink);
+  color: var(--primary-color);
   border-radius: 1rem;
+  font-size: var(--font-size-sm);
   cursor: pointer;
 }
 
@@ -727,6 +763,7 @@ footer {
 footer > p {
   font-family: var(--regular-font);
   font-weight: 700;
+  font-size: var(--font-size-sm);
 }
 
 footer > p > a {
@@ -736,9 +773,6 @@ footer > p > a {
 }
 
 @media screen and (max-width: 450px) {
-  .links {
-    padding-left: 0;
-  }
   .sidenav {
     padding-top: 15px;
   }
@@ -751,6 +785,7 @@ footer > p > a {
   .hero-box {
     box-shadow: none;
     margin: 2rem;
+    width: min(350px, 80%);
     background: rgba(255, 255, 255, 0.5);
   }
   .case-individual-container {
@@ -771,6 +806,10 @@ footer > p > a {
   }
   .trigram {
     display: block;
+  }
+  .links {
+    padding-left: 0;
+    margin-left: 5px;
   }
 }
 
