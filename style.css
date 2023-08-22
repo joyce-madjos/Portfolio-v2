@@ -453,6 +453,7 @@ nav > img {
 .portfolio-title {
   font-size: var(--font-size-sm);
   text-transform: uppercase;
+  padding-top: 1rem;
 }
 
 .tech {
@@ -537,28 +538,55 @@ nav > img {
 }
 
 .get-in-touch-container {
-  padding: 1.5rem;
+  /* padding: 1.5rem; */
   display: flex;
-  justify-content: space-between;
-  align-content: stretch;
   flex-wrap: wrap;
+  padding: 1rem;
+  /* justify-content: space-between; */
+  /* border: 5px solid yellow; */
+  /* align-content: stretch; */
 }
 
-.message-me,
+.message-me {
+  overflow-y: auto;
+  /* background-color: aqua; */
+  /* display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; */
+  /* flex-grow: 1; */
+  /* flex-basis: 500px; */
+}
+
+form {
+  /* width: 100%; */
+  /* background-color: black; */
+}
+
 .links {
-  flex: 1;
+  /* flex: 1; */
 }
 
 .form-inline {
   margin: 1rem 0;
+  /* border: 5px solid green; */
+  /* width: 100%; */
+  /* width: min(90%, 320px); */
+  /* background-color: pink; */
 }
 
 .form-inline > input {
+  /* max-width: 100%; */
+  /* min-width: 320px; */
+  /* width: min(320px, 100%); */
+  /* margin: 0 auto; */
   font-family: var(--regular-font);
-  width: 100%;
+  font-size: var(--font-size-sm);
   display: block;
   padding: 0.8rem;
   border-radius: 0.5rem;
+  width: min(320px, 100%);
+  /* width: 100%; */
+  /* border: 5px solid pink; */
 }
 
 .form-inline > label > span {
@@ -566,11 +594,17 @@ nav > img {
 }
 
 textarea {
+  /* border: 5px solid blue; */
   font-family: var(--regular-font);
-  max-width: 320px;
-  min-width: 320px;
   border-radius: 0.2rem;
-  font-size: 13px;
+  font-size: var(--font-size-sm);
+  display: block;
+  resize: vertical;
+  width: min(320px, 100%);
+  min-height: 16px;
+  /* max-width: 320px;
+  min-width: 320px; */
+  /* width: clamp(300px, 320px, 100%); */
 }
 
 .links {
@@ -589,7 +623,7 @@ textarea {
 
 form > button {
   padding: 0.8rem 2rem;
-  width: 100%;
+  width: min(320px, 100%);
   font-family: var(--regular-font);
   background-color: var(--accent);
   color: var(--secondary-color);
