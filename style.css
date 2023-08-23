@@ -48,9 +48,12 @@ body {
   font-family: var(--regular-font);
 }
 
-/* nav > .my-logo {
+.experience-individual-container,
+.show-all-projects,
+button,
+i {
   cursor: pointer;
-} */
+}
 
 .headings {
   font-family: var(--heading-font);
@@ -163,11 +166,6 @@ nav {
   /* background: rgba(224, 27, 111, 0.7); */
   /* margin-left: 50px; */
   /* border: 2px solid yellow; */
-}
-
-.my-logo-container {
-  display: block;
-  width: 100%;
 }
 
 .my-logo {
@@ -391,11 +389,13 @@ nav {
   margin: 0;
   color: var(--primary-color);
   flex: 1;
-  padding: 0 1rem;
+  padding: 1rem;
+  text-align: justify;
   display: none;
 }
 
 .experience-skills {
+  margin-top: 1rem;
   display: flex;
   gap: 1rem;
 }
@@ -811,6 +811,10 @@ footer > p > a {
   }
   .nav-button {
     display: none;
+  }
+  .my-logo-container {
+    display: block;
+    width: 100%;
   }
   .my-logo {
     margin-right: auto;
