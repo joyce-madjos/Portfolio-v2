@@ -325,6 +325,7 @@ nav {
   border-radius: 1rem;
   margin-bottom: 0;
   width: (600px, 300px);
+  min-height: 200px;
 }
 
 .not-active-experience-title {
