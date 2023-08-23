@@ -48,9 +48,9 @@ body {
   font-family: var(--regular-font);
 }
 
-nav > .my-logo {
+/* nav > .my-logo {
   cursor: pointer;
-}
+} */
 
 .headings {
   font-family: var(--heading-font);
@@ -814,7 +814,6 @@ footer > p > a {
   }
   .my-logo {
     margin-right: auto;
-    border: 3px solid pink;
   }
   .trigram {
     display: block;
