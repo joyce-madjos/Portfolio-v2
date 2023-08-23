@@ -165,6 +165,11 @@ nav {
   /* border: 2px solid yellow; */
 }
 
+.my-logo-container {
+  display: block;
+  width: 100%;
+}
+
 .my-logo {
   width: 6.41669rem;
   /* height: 3.25rem; */
