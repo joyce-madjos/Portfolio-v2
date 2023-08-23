@@ -1,6 +1,5 @@
 let body = document.getElementsByTagName("body");
 let sidebar = document.getElementById("mySidenav");
-let experienceContainer = document.getElementById("experienceContainer");
 
 function openNav() {
   sidebar.style.display = "block";
@@ -13,4 +12,8 @@ function closeNav() {
   body.style.overflow = "auto";
 }
 
-experienceContainer.addEventListener("click", function () {});
+document
+  .getElementById("productEngContainer")
+  .addEventListener("click", function () {
+    document.getElementById("productEng").style.display = "block";
+  });
