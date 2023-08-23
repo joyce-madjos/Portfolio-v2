@@ -391,7 +391,7 @@ nav {
   flex: 1;
   padding: 1rem;
   text-align: justify;
-  display: none;
+  /* display: none; */
 }
 
 .experience-skills {
@@ -833,4 +833,41 @@ footer > p > a {
   .sidenav {
     display: none;
   }
+}
+
+.slider {
+  width: 80%;
+  margin: 100px auto;
+  /* background-color: pink; */
+}
+
+.slick-slide {
+  margin: 0px 20px;
+  /* width: 50%; */
+  /* background-color: #e01b6f; */
+}
+
+.slick-slide .experience-individual-container {
+  width: 50%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+  /* margin: 9rem; */
+  background-color: black;
+  /* display: block; */
+}
+
+.slick-slide {
+  transition: all ease-in-out 0.3s;
+  opacity: 0.2;
+}
+
+.slick-active {
+  opacity: 0.5;
+}
+
+.slick-current {
+  opacity: 1;
 }
