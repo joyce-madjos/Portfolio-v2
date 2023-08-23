@@ -299,9 +299,11 @@ nav {
 
 .experience-container {
   display: flex;
-  flex-wrap: wrap;
-  overflow-x: auto;
+  /* flex-wrap: wrap; */
+  overflow-y: auto;
+  /* width: 100%; */
   /* height: auto; */
+  /* height: 500px; */
 }
 
 .experience-individual-container {
@@ -309,9 +311,10 @@ nav {
   flex-direction: column;
   font-family: var(--heading-font);
   margin: 1rem;
-  flex-grow: 1;
-  flex-basis: 500px;
+  /* flex-grow: 1; */
+  /* width: 500px; */
   /* width: min(320px, 100%); */
+  /* border: 3px solid pink; */
 }
 
 .experience-title {
@@ -321,6 +324,7 @@ nav {
   padding: 1rem;
   border-radius: 1rem;
   margin-bottom: 0;
+  width: (600px, 300px);
 }
 
 .not-active-experience-title {
@@ -388,7 +392,7 @@ nav {
   padding-top: 0; */
   margin: 0;
   color: var(--primary-color);
-  flex: 1;
+  /* flex: 1; */
   padding: 1rem;
   text-align: justify;
   /* display: none; */
@@ -402,8 +406,9 @@ nav {
 
 .skills {
   display: flex;
+  overflow: auto;
   /* justify-content: space-between; */
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .skills-individual-container {
