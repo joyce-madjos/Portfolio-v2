@@ -587,11 +587,6 @@ nav {
   display: flex;
 }
 
-.case-description {
-  /* border: 2px solid blue; */
-  /* width: min(75%, 100%); */
-}
-
 .case-title {
   font-family: var(--heading-font);
   font-size: var(--font-size-md);
