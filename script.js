@@ -11,9 +11,3 @@ function closeNav() {
   sidebar.style.width = "0";
   body.style.overflow = "auto";
 }
-
-document
-  .getElementById("productEngContainer")
-  .addEventListener("click", function () {
-    document.getElementById("productEng").style.display = "block";
-  });
