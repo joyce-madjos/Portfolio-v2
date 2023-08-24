@@ -276,6 +276,7 @@ nav {
   display: flex;
   align-items: center;
   padding: 1rem;
+  /* border: 3px solid pink; */
   /* border-radius: 1rem; */
 }
 
@@ -303,23 +304,27 @@ nav {
 .experience-container {
   display: flex;
   flex-wrap: wrap;
-  /* overflow-y: auto; */
+  gap: 1rem;
+  /* overflow-x: auto; */
   /* width: 100%; */
   /* height: auto; */
-  /* height: 500px; */
+  /* height: 300px; */
 }
 
 .experience-individual-container {
   display: flex;
   flex-direction: column;
   font-family: var(--heading-font);
-  margin: 1rem;
-  flex-grow: 1;
-  width: 500px;
+  /* margin: 1rem; */
   border-radius: 1rem;
   background-color: #f8fafd;
+  /* background-color: pink; */
+
+  flex-grow: 1;
+  flex-basis: 450px;
   /* width: min(320px, 100%); */
   /* border: 3px solid pink; */
+  /* width: 100%; */
 }
 
 /* .experience-title {
@@ -333,18 +338,21 @@ nav {
   min-height: 200px; */
 
 .experience-title {
-  /* background-color: black; */
+  background-color: var(--secondary-color);
   border: 2px solid var(--border-color);
   color: var(--primary-color);
   display: flex;
   padding: 1rem;
   border-radius: 1rem;
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
+  /* width: 100%; */
 }
 
 .experience-title-card {
   display: flex;
   align-items: center;
+  width: 100%;
+  /* background-color: pink; */
 }
 
 .company > img {
@@ -353,15 +361,17 @@ nav {
 }
 
 .title {
-  padding: 1rem;
+  /* padding: 1rem; */
+  flex-grow: 1;
+  /* background-color: #4285f4; */
 }
 
 .title > h3 {
   font-family: var(--heading-font);
-  display: block;
+  /* display: block; */
 }
 
-.title h3:nth-child(1) {
+.position {
   font-size: var(--font-size-md);
   font-weight: 700;
   text-transform: uppercase;
@@ -372,13 +382,14 @@ nav {
   color: var(--light-pink);
 } */
 
-.title h3:nth-child(2) {
+.company-name {
+  /* background-color: yellow; */
   font-size: var(--font-size-sm);
 }
 
 .title > h3,
 .title > p {
-  margin: 0;
+  /* margin: 0; */
 }
 
 .title > p {
@@ -394,17 +405,20 @@ nav {
   padding-top: 0; */
   /* flex: 1; */
   /* display: none; */
-  margin: 0;
+
+  /* width: 100%; */
+  /* margin: 0; */
   color: var(--primary-color);
   padding: 1rem;
   text-align: justify;
   border-radius: 1rem;
+  font-size: var(--font-size-sm);
 }
 
 .experience-skills {
   margin-top: 1rem;
   display: flex;
-  gap: 1rem;
+  /* gap: 1rem; */
 }
 
 .skills {
