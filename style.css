@@ -401,10 +401,6 @@ nav {
   border-radius: 1rem;
 }
 
-.experience-description:hover {
-  background-color: var(--light-pink);
-}
-
 .experience-skills {
   margin-top: 1rem;
   display: flex;
