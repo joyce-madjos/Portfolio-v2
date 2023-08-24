@@ -72,7 +72,6 @@ i {
   margin: 1rem 1rem 0 1rem;
 }
 
-.box,
 .project-individual-container,
 .case-individual-container,
 .get-in-touch-container {
@@ -503,7 +502,7 @@ nav {
 
 .project-container {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   flex-wrap: wrap;
   gap: 1rem;
 }
