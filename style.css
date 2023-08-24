@@ -47,6 +47,7 @@ body {
   padding: 0;
   font-family: var(--regular-font);
 }
+
 p {
   line-height: normal;
 }
@@ -316,11 +317,12 @@ nav {
   flex-grow: 1;
   width: 500px;
   border-radius: 1rem;
+  background-color: #f8fafd;
   /* width: min(320px, 100%); */
   /* border: 3px solid pink; */
 }
 
-.experience-title {
+/* .experience-title {
   background-color: var(--pink);
   color: var(--secondary-color);
   display: flex;
@@ -329,20 +331,15 @@ nav {
   margin-bottom: 0;
   /* width: (600px, 300px);
   min-height: 200px; */
-}
 
-.not-active-experience-title {
-  border: 1px solid #f8fafd;
+.experience-title {
+  /* background-color: black; */
+  border: 2px solid var(--border-color);
   color: var(--primary-color);
   display: flex;
   padding: 1rem;
   border-radius: 1rem;
   margin-bottom: 0;
-}
-
-.not-active-experience-title:hover {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
 }
 
 .experience-title-card {
@@ -395,14 +392,12 @@ nav {
   /* border-radius: 0 1rem 1rem 0; */
   /* padding: 1rem;
   padding-top: 0; */
+  /* flex: 1; */
+  /* display: none; */
   margin: 0;
   color: var(--primary-color);
-  background-color: #f8fafd;
-
-  /* flex: 1; */
   padding: 1rem;
   text-align: justify;
-  /* display: none; */
   border-radius: 1rem;
 }
 
