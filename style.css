@@ -315,13 +315,12 @@ nav {
   display: flex;
   flex-direction: column;
   font-family: var(--heading-font);
-  /* margin: 1rem; */
+  margin-top: 1rem;
   border-radius: 1rem;
   background-color: #f8fafd;
-  /* background-color: pink; */
-
   flex-grow: 1;
   flex-basis: 450px;
+  /* background-color: pink; */
   /* width: min(320px, 100%); */
   /* border: 3px solid pink; */
   /* width: 100%; */
