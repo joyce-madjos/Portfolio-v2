@@ -95,10 +95,10 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background-color: var(--secondary-color);
   /* margin: 0; */
   /* border-radius: 1.875rem; */
   /* border: 10px solid yellow; */
-  background-color: var(--secondary-color);
   /* width: 100%;
   position: sticky;
   z-index: 2;
@@ -112,6 +112,7 @@ header {
   position: sticky;
   z-index: 2;
   top: 0;
+  /* margin: 5rem 0; */
   /* background-color: blue; */
 }
 
