@@ -9,12 +9,23 @@ function openNav() {
 }
 
 function closeNav() {
-  sidebar.style.width = "0";
-  body.style.overflow = "auto";
+  sidebar.style.display = "none";
+  // sidebar.style.width = "0";
+  // body.style.overflow = "auto";
+  trigram.checked = false;
 }
 
 trigram.addEventListener("click", () => {
   if (trigram.checked == false) {
-    closeNav();
+    trigram.style.backgroundColor = "red";
+    sidebar.style.display = "none";
+    // sidebar.style.width = "0";
+    // body.style.overflow = "auto";
+    // trigram.classList.add("menu");
+  } else {
+    // openNav();
+    sidebar.style.display = "block";
+    // body.style.overflow = "hidden";
+    trigram.style.backgroundColor = "yellow";
   }
 });
