@@ -201,18 +201,14 @@ header {
   /* overflow: hidden; */
   overflow-x: hidden;
   transition: 0.2s;
-  padding-top: 60px;
+  /* padding-top: 60px; */
   overflow: hidden;
   display: none;
 }
 
 .sidebar-container {
-  margin-top: 5rem;
-  /* border: 2px solid black; */
-}
-
-.sidebar-button:hover {
-  color: var(--pink);
+  margin-top: 5.2rem;
+  border-top: 1px solid var(--border-color);
 }
 
 .sidebar-button {
@@ -229,10 +225,14 @@ header {
 
   /* border-bottom: 2px solid var(--border-color); */
 }
-
-.sidenav a:hover {
-  color: var(--primary-color);
+.sidebar-button:hover {
+  color: var(--pink);
+  /* background-color: var(--pink); */
 }
+
+/* .sidenav a:hover {
+  color: var(--primary-color);
+} */
 
 .sidenav .closebtn {
   position: absolute;
