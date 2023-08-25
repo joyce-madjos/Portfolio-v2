@@ -116,11 +116,64 @@ header {
   /* background-color: blue; */
 }
 
-.trigram {
-  color: var(--pink);
-  font-size: 30px;
-  cursor: pointer;
+.menu {
   display: none;
+  --s: 30px; /* control the size */
+  --c: var(--pink); /* the color */
+
+  height: var(--s);
+  aspect-ratio: 1;
+  border: none;
+  padding: 0;
+  border-inline: calc(var(--s) / 2) solid #0000;
+  box-sizing: content-box;
+  --_g1: linear-gradient(var(--c) 20%, #0000 0 80%, var(--c) 0) no-repeat
+    content-box border-box;
+  --_g2: radial-gradient(circle closest-side at 50% 12.5%, var(--c) 95%, #0000)
+    repeat-y content-box border-box;
+  background: var(--_g2) left var(--_p, 0px) top,
+    var(--_g1) left calc(var(--s) / 10 + var(--_p, 0px)) top,
+    var(--_g2) right var(--_p, 0px) top,
+    var(--_g1) right calc(var(--s) / 10 + var(--_p, 0px)) top;
+  background-size: 20% 80%, 40% 100%;
+  position: relative;
+  clip-path: inset(0 25%);
+  -webkit-mask: linear-gradient(90deg, #0000, #000 25% 75%, #0000);
+  cursor: pointer;
+  transition: background-position 0.3s var(--_s, 0.3s),
+    clip-path 0s var(--_s, 0.6s);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.menu:before,
+.menu:after {
+  content: "";
+  position: absolute;
+  border-radius: var(--s);
+  inset: 40% 0;
+  background: var(--c);
+  transition: transform 0.3s calc(0.3s - var(--_s, 0.3s));
+}
+
+.menu:checked {
+  clip-path: inset(0);
+  --_p: calc(-1 * var(--s));
+  --_s: 0s;
+}
+.menu:checked:before {
+  transform: rotate(45deg);
+}
+.menu:checked:after {
+  transform: rotate(-45deg);
+}
+.menu:focus-visible {
+  clip-path: none;
+  -webkit-mask: none;
+  border: none;
+  outline: 2px solid var(--c);
+  outline-offset: 5px;
 }
 
 .sidenav {
@@ -204,7 +257,7 @@ header {
   text-align: center;
   border-bottom: 2px solid var(--pink);
   /* border: 1px solid var(--accent); */
-  /* border-radius: 1rem; */
+  border-radius: 1rem;
   /* padding: 0.5rem 1.3rem; */
   /* background-color: var(--accent); */
 }
@@ -232,6 +285,7 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 1rem;
+  margin: 0 1rem;
 }
 
 .hero > img {
@@ -833,20 +887,28 @@ footer > p > a {
   /* color: var(--accent); */
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
   .sidenav {
     padding-top: 15px;
   }
   .sidenav a {
     font-size: 18px;
   }
+  .hero-box {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  .hero {
+    margin: 0;
+    border-radius: 0;
+  }
   .hero-box {
     box-shadow: none;
-    margin: 2rem;
-    width: min(350px, 80%);
+    margin: 1rem 1rem;
+    /* width: 100%; */
+    width: min(350px, 100%);
     background: rgba(255, 255, 255, 0.5);
   }
   .case-individual-container {
@@ -868,9 +930,11 @@ footer > p > a {
   }
   .my-logo {
     margin-right: auto;
+    margin-left: 1rem;
   }
-  .trigram {
+  .menu {
     display: block;
+    margin-right: 1rem;
   }
   .links {
     padding-left: 0;

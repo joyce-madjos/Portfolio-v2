@@ -31,7 +31,15 @@
         <a class="nav-button" href="#projects">Projects</a>
         <a class="nav-button" href="#case-study">Case Study</a>
         <a class="nav-button" href="#get-in-touch">Get in touch</a>
-        <span class="trigram" onclick="openNav()">&#9776;</span>
+        <!-- <span class="trigram" onclick="openNav()">&#9776;</span> -->
+        <input
+          id="menu"
+          onclick="openNav()"
+          type="checkbox"
+          role="button"
+          aria-label="Display the menu"
+          class="menu"
+        />
       </nav>
     </header>
 
@@ -56,28 +64,28 @@
         </div>
       </div>
     </div>
-    <main>
-      <div class="hero">
-        <div class="hero-box">
-          <p class="poem">The art of the web that I truly love</p>
-          <p class="poem">
-            In code's realm, I craft and roam,
-            <span>Passion for web, in a zone of my own.</span>
-            <span>Front-end's my canvas, focus refined,</span>
-            <span>Crafting wonders in each design.</span>
-          </p>
-          <p class="poem">
-            Visually alluring, user's delight,
-            <span>Websites emerge, fresh and bright. </span>
-            <span>Beyond mere code, pixels take flight,</span>
-            <span> Digital realms where stories ignite.</span>
-          </p>
-          <p class="hero-name">Joyce Madjos</p>
-          <p class="poem">UI/UX Designer</p>
-          <p class="poem">Web Developer, Admin & Analyst</p>
-        </div>
-      </div>
 
+    <div class="hero">
+      <div class="hero-box">
+        <p class="poem">The art of the web that I truly love</p>
+        <p class="poem">
+          In code's realm, I craft and roam,
+          <span>Passion for web, in a zone of my own.</span>
+          <span>Front-end's my canvas, focus refined,</span>
+          <span>Crafting wonders in each design.</span>
+        </p>
+        <p class="poem">
+          Visually alluring, user's delight,
+          <span>Websites emerge, fresh and bright. </span>
+          <span>Beyond mere code, pixels take flight,</span>
+          <span> Digital realms where stories ignite.</span>
+        </p>
+        <p class="hero-name">Joyce Madjos</p>
+        <p class="poem">UI/UX Designer</p>
+        <p class="poem">Web Developer, Admin & Analyst</p>
+      </div>
+    </div>
+    <main>
       <div id="about-me" class="about-me-container">
         <h1 class="headings">About Me</h1>
         <div class="box">
@@ -513,6 +521,7 @@ Hello!</textarea
     <footer>
       <p>&#169; 2023 <a href="#">Joyce Madjos</a></p>
     </footer>
+
     <!-- Main JS -->
     <script src="script.js"></script>
   </body>
