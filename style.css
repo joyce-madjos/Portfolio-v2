@@ -98,13 +98,21 @@ nav {
   /* margin: 0; */
   /* border-radius: 1.875rem; */
   /* border: 10px solid yellow; */
+  background-color: var(--secondary-color);
+  /* width: 100%;
+  position: sticky;
+  z-index: 2;
+  top: 0; */
+  /* background-color: pink; */
+  /* background: rgba(255, 255, 255, 0.5); */
+}
 
+header {
   width: 100%;
-  position: fixed;
+  position: sticky;
   z-index: 2;
   top: 0;
-  background: rgba(255, 255, 255, 0.5);
-  padding: 0;
+  /* background-color: blue; */
 }
 
 .trigram {
@@ -222,6 +230,7 @@ nav {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  border-radius: 1rem;
 }
 
 .hero > img {
