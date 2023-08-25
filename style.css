@@ -523,6 +523,8 @@ header {
   flex-direction: column;
   align-items: center;
   /* border: 1px solid pink; */
+  /* background-color: yellow; */
+  /* margin: 0; */
 }
 
 .skill-circle-container {
@@ -530,18 +532,25 @@ header {
 }
 
 .skill-circle {
-  width: 6.5rem;
-  height: 6.5rem;
-  border-radius: 4rem;
+  /* width: 6.5rem;
+  height: 6.5rem; */
+  border-radius: 1rem;
+  /* background-color: pink; */
   background-color: var(--mini-background-color);
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 1rem;
 }
 
 .skills-image {
   width: 4rem;
-  height: auto;
+  height: 50px;
+}
+
+.figma-logo {
+  width: 4rem;
+  height: 50px;
 }
 
 .skill-title-container {
@@ -958,4 +967,19 @@ footer > p > a {
   .sidebar-container {
     display: none;
   }
+}
+
+iframe {
+  border: 1px solid yellow;
+  width: 100%;
+  height: 450px;
+  background-color: pink;
+}
+
+#content {
+  width: 414px;
+  margin: auto;
+  border-style: none;
+  height: 100%;
+  display: block;
 }
