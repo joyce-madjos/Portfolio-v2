@@ -62,14 +62,14 @@ i {
   font-family: var(--heading-font);
   font-size: var(--font-size-lg);
   font-weight: 700;
-  margin: 1rem 0;
+  margin: 3rem 0 2rem 0;
 }
 
 .subheadings {
   font-family: var(--heading-font);
   font-size: var(--font-size-md);
   font-weight: 400;
-  margin: 1rem 1rem 0 1rem;
+  margin: 2rem 1rem 1rem 1rem;
 }
 
 .project-individual-container,
