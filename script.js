@@ -5,27 +5,20 @@ let trigram = document.getElementById("menu");
 function openNav() {
   sidebar.style.display = "block";
   sidebar.style.width = "100%";
-  body.style.overflow = "hidden";
+  document.body.style.height = "100%";
+  document.body.style.overflowY = "hidden";
 }
 
 function closeNav() {
   sidebar.style.display = "none";
-  // sidebar.style.width = "0";
-  // body.style.overflow = "auto";
+  document.body.style.overflowY = "auto";
   trigram.checked = false;
 }
 
 trigram.addEventListener("click", () => {
   if (trigram.checked == false) {
-    trigram.style.backgroundColor = "red";
-    sidebar.style.display = "none";
-    // sidebar.style.width = "0";
-    // body.style.overflow = "auto";
-    // trigram.classList.add("menu");
+    closeNav();
   } else {
-    // openNav();
-    sidebar.style.display = "block";
-    // body.style.overflow = "hidden";
-    trigram.style.backgroundColor = "yellow";
+    openNav();
   }
 });
