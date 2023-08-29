@@ -705,6 +705,36 @@ header {
   display: block;
 }
 
+.mini-case-individual-container {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--heading-font);
+  margin-top: 1rem;
+  border-radius: 1rem;
+  background-color: aqua;
+  /* background-color: #f8fafd; */
+  flex-grow: 1;
+  flex-basis: 450px;
+  margin-bottom: 1rem;
+}
+
+.mini-case-image {
+  background-color: var(--secondary-color);
+  border: 2px solid var(--border-color);
+  color: var(--primary-color);
+  display: flex;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.mini-case-description {
+  color: var(--primary-color);
+  padding: 1rem;
+  text-align: justify;
+  border-radius: 1rem;
+  font-size: var(--font-size-sm);
+}
+
 .case-individual-container {
   /* border-radius: 1rem; */
   padding: 1rem 1.5rem;
