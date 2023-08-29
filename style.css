@@ -705,10 +705,18 @@ header {
   display: block;
 }
 
+.case-study-column {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .mini-case-container {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  /* flex: 1; */
+  /* flex-basis: 1000px; */
+  width: min(500px, 100%);
 }
 
 .mini-case-individual-container {
@@ -717,7 +725,7 @@ header {
   background-color: aqua;
   /* background-color: #f8fafd; */
   flex-grow: 1;
-  flex-basis: 300px;
+  flex-basis: 200px;
   margin-bottom: 1rem;
 }
 
@@ -731,6 +739,7 @@ header {
 }
 
 .mini-case-description {
+  flex-basis: 300px;
   color: var(--primary-color);
   padding: 1rem;
   /* text-align: justify; */
@@ -741,7 +750,9 @@ header {
 .case-individual-container {
   /* border-radius: 1rem; */
   padding: 1rem 1.5rem;
-  display: flex;
+  flex-basis: 500px;
+  /* display: flex; */
+  /* flex-grow: 1; */
 }
 
 .case-title {
@@ -758,11 +769,11 @@ header {
 }
 
 .button-container {
-  flex: 1;
+  /* flex: 1; */
   /* border: 2px solid black; */
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
 .button-container > button {
