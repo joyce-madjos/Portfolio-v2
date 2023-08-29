@@ -708,24 +708,28 @@ header {
 .case-study-column {
   display: flex;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .mini-case-container {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  /* flex: 1; */
+  flex-grow: 1;
   /* flex-basis: 1000px; */
-  width: min(500px, 100%);
+  /* flex-basis: min(600px, 100%); */
+  background-color: yellow;
+  /* overflow: auto; */
 }
 
 .mini-case-individual-container {
+  /* height: 200px; */
   /* margin-top: 1rem; */
   border-radius: 1rem;
   background-color: aqua;
   /* background-color: #f8fafd; */
   flex-grow: 1;
-  flex-basis: 200px;
+  flex-basis: 300px;
   margin-bottom: 1rem;
 }
 
@@ -734,6 +738,8 @@ header {
   /* border: 2px solid var(--border-color);
   color: var(--primary-color);
   display: flex; */
+  /* height: 250px; */
+  /* width: 250px; */
   padding: 1rem;
   border-radius: 1rem;
 }
@@ -750,9 +756,10 @@ header {
 .case-individual-container {
   /* border-radius: 1rem; */
   padding: 1rem 1.5rem;
-  flex-basis: 500px;
+  flex-basis: 600px;
+  background-color: green;
   /* display: flex; */
-  /* flex-grow: 1; */
+  flex-grow: 1;
 }
 
 .case-title {
