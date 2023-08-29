@@ -453,7 +453,7 @@ header {
 
 .company-name {
   /* background-color: yellow; */
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-base);
 }
 
 .title > h3,
