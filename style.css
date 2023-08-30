@@ -52,6 +52,16 @@ p {
   line-height: normal;
 }
 
+.show-all-projects {
+  text-decoration: none;
+  color: var(--pink);
+  font-family: var(--heading-font);
+  font-weight: 700;
+  margin-top: 1rem;
+  /* border: 2px solid black; */
+  display: block;
+}
+
 .show-all-projects,
 button,
 i {
