@@ -75,6 +75,14 @@ i {
   margin: 3rem 0 2rem 0;
 }
 
+.case-study-heading,
+.project-heading {
+  font-family: var(--heading-font);
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
 .subheadings {
   font-family: var(--heading-font);
   font-size: var(--font-size-md);
@@ -784,11 +792,58 @@ header {
   font-weight: 700;
 }
 
+.case-study-page-title {
+  font-family: var(--heading-font);
+  width: 30ch;
+  font-size: var(--font-size-md);
+  margin: 0;
+  font-weight: 700;
+}
+
 .case-subtitle {
   width: 40ch;
   font-family: var(--regular-font);
   font-size: var(--font-size-sm);
   margin: 1rem 0;
+}
+
+.case-study-page-subtitle {
+  font-family: var(--regular-font);
+  font-size: var(--font-size-sm);
+  margin: 1rem 0;
+}
+
+.case-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.case-details {
+  font-family: var(--regular-font);
+  font-size: var(--font-size-sm);
+  flex-basis: 20%;
+  flex-grow: 1;
+  border: 2px solid orange;
+}
+
+.case-details > p {
+  margin-bottom: 0.5rem;
+}
+
+.case-details > p > em {
+  font-weight: bold;
+}
+
+.case-image {
+  border: 2px solid yellow;
+  flex-grow: 2;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.case-image > img {
+  /* border: 2px solid blue; */
 }
 
 .button-container {
@@ -1001,6 +1056,13 @@ footer > p > a {
   .case-title,
   .case-subtitle {
     width: 100%;
+  }
+  .case-image {
+    order: 1;
+    flex-basis: 100%;
+  }
+  .case-details {
+    order: 2;
   }
   .button-container > button {
     padding: 0.3rem 1rem;
