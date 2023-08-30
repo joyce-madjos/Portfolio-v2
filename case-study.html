@@ -4,6 +4,71 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Joyce Madjos | Case Study</title>
+    <!-- Reset CCS -->
+    <link rel="stylesheet" href="reset.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Kit -->
+    <script
+      src="https://kit.fontawesome.com/c8414e59dd.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav>
+        <a class="my-logo-container" href="index.html">
+          <img
+            class="my-logo"
+            src="assets/images/my-logo.png"
+            alt="Logo"
+            loading="lazy"
+          />
+        </a>
+        <a class="nav-button nav-button-active" href="#about-me">About Me</a>
+        <a class="nav-button" href="project.html">Projects</a>
+        <a class="nav-button" href="#case-study">Case Study</a>
+        <a class="nav-button" href="#get-in-touch">Get in touch</a>
+        <!-- <span class="trigram" onclick="openNav()">&#9776;</span> -->
+        <input
+          id="menu"
+          type="checkbox"
+          role="button"
+          aria-label="Display the menu"
+          class="menu"
+        />
+      </nav>
+    </header>
+
+    <div id="mySidenav" class="sidenav">
+      <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      > -->
+      <div class="sidebar-container">
+        <a class="sidebar-button" href="#about-me" onclick="closeNav()"
+          >About Me</a
+        >
+        <a class="sidebar-button" href="project.html" onclick="closeNav()"
+          >Projects</a
+        >
+        <a class="sidebar-button" href="case-study.html" onclick="closeNav()"
+          >Case Study</a
+        >
+        <a class="sidebar-button" href="#get-in-touch" onclick="closeNav()"
+          >Get in touch</a
+        >
+      </div>
+    </div>
+    <footer>
+      <p>&#169; 2023 <a href="#">Joyce Madjos</a></p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
