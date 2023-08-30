@@ -98,7 +98,8 @@ i {
 }
 
 .project-individual-container,
-.get-in-touch-container {
+.get-in-touch-container,
+.background {
   border-radius: 0.625rem;
   border: 2px solid var(--border-color);
 }
@@ -840,6 +841,15 @@ header {
   display: flex;
   justify-content: center;
   align-content: center;
+}
+
+.background {
+  padding: 1rem;
+}
+
+.background > p > em {
+  color: #0d6e6e;
+  font-weight: bold;
 }
 
 .case-image > img {
