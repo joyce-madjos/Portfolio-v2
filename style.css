@@ -872,6 +872,7 @@ header {
   flex-wrap: wrap;
   gap: 1rem;
   margin-top: 1rem;
+  /* border: 2px solid green; */
 }
 
 .challenges {
@@ -883,6 +884,11 @@ header {
   list-style: disc;
   margin-left: 1rem;
   /* display: block; */
+}
+
+.solution {
+  margin-top: 2rem;
+  /* border: 1px solid pink; */
 }
 
 .case-image > img {
