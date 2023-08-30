@@ -80,7 +80,6 @@ i {
 }
 
 .project-individual-container,
-.case-individual-container,
 .get-in-touch-container {
   border-radius: 0.625rem;
   border: 2px solid var(--border-color);
@@ -708,7 +707,8 @@ header {
 .case-study-column {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2rem;
+  align-items: flex-start;
 }
 
 .mini-case-container {
@@ -768,12 +768,14 @@ header {
 
 .case-title {
   font-family: var(--heading-font);
+  width: 20ch;
   font-size: var(--font-size-md);
   margin: 0;
   font-weight: 700;
 }
 
 .case-subtitle {
+  width: 40ch;
   font-family: var(--regular-font);
   font-size: var(--font-size-sm);
   margin: 1rem 0;
@@ -983,6 +985,12 @@ footer > p > a {
   }
   .case-individual-container {
     flex-direction: column;
+    border-radius: 0.625rem;
+    border: 2px solid var(--border-color);
+  }
+  .case-title,
+  .case-subtitle {
+    width: 100%;
   }
   .button-container > button {
     padding: 0.3rem 1rem;
