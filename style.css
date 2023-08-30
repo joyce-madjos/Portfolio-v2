@@ -712,12 +712,16 @@ header {
 }
 
 .mini-case-container {
-  display: flex;
+  display: grid;
+  grid-template: 1fr 1fr/ 1fr 1fr;
+  gap: 20px;
+
+  /* display: flex; */
   background-color: yellow;
-  gap: 1rem;
+  /* gap: 1rem; */
   flex-grow: 1;
   /* flex-wrap: wrap; */
-  /* flex-basis: 1000px; */
+  flex-basis: 600px;
   /* flex-basis: min(600px, 100%); */
   /* overflow: auto; */
 }
@@ -725,10 +729,10 @@ header {
 .mini-case-individual-container {
   /* height: 200px; */
   /* margin-top: 1rem; */
+  /* background-color: #f8fafd; */
   border-radius: 1rem;
   background-color: aqua;
-  /* background-color: #f8fafd; */
-  flex-grow: 1;
+  flex-grow: 0;
   flex-basis: 300px;
   margin-bottom: 1rem;
 }
