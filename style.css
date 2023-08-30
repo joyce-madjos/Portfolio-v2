@@ -83,6 +83,15 @@ i {
   margin-bottom: 2rem;
 }
 
+.background-heading,
+.goal-headings {
+  font-family: var(--heading-font);
+  font-size: var(--font-size-md);
+  font-weight: 700;
+  margin: 1rem 0;
+  /* margin-bottom: 2rem; */
+}
+
 .subheadings {
   font-family: var(--heading-font);
   font-size: var(--font-size-md);
@@ -831,6 +840,11 @@ header {
   margin-bottom: 0.5rem;
 }
 
+.case-details > a {
+  display: block;
+  margin: 1rem 0;
+}
+
 .case-details > p > em {
   font-weight: bold;
 }
@@ -844,12 +858,31 @@ header {
 }
 
 .background {
+  /* margin-top: 1rem; */
   padding: 1rem;
 }
 
 .background > p > em {
   color: #0d6e6e;
   font-weight: bold;
+}
+
+.goal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.challenges {
+  font-family: var(--regular-font);
+}
+
+.challenges > ul > li,
+.value > ul > li {
+  list-style: disc;
+  margin-left: 1rem;
+  /* display: block; */
 }
 
 .case-image > img {
