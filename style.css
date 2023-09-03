@@ -512,9 +512,13 @@ header {
 }
 
 .experience-skills {
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   display: flex;
+  flex-wrap: wrap;
   /* gap: 1rem; */
+  font-weight: bold;
+  /* display: inline-block; */
+  /* font-weight: var(--font-size-sm); */
 }
 
 .skills {
@@ -879,10 +883,16 @@ header {
   font-family: var(--regular-font);
 }
 
+.experience-description > ul > li,
 .challenges > ul > li,
 .value > ul > li {
   list-style: disc;
   margin-left: 1rem;
+  /* display: block; */
+}
+
+.experience-description > ul > li {
+  margin-bottom: 1rem;
   /* display: block; */
 }
 
