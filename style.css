@@ -893,6 +893,7 @@ header {
 
 .experience-description > ul > li {
   margin-bottom: 1rem;
+  line-height: normal;
   /* display: block; */
 }
 
