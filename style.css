@@ -800,7 +800,7 @@ header {
 
 .case-title {
   font-family: var(--heading-font);
-  width: 20ch;
+  width: 30ch;
   font-size: var(--font-size-md);
   margin: 0;
   font-weight: 700;
@@ -915,7 +915,12 @@ header {
   /* border: 2px solid blue; */
 }
 
-.button-container > button {
+.learn-more {
+  display: block;
+  width: 20ch;
+  text-align: center;
+  text-decoration: none;
+  color: var(--primary-color);
   padding: 1rem 2rem;
   font-family: var(--heading-font);
   font-weight: 700;
@@ -1125,7 +1130,7 @@ footer > p > a {
   .case-details {
     order: 2;
   }
-  .button-container > button {
+  .learn-more {
     padding: 0.3rem 1rem;
     border-radius: 0.5rem;
     width: 100%;
