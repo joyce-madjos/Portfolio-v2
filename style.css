@@ -872,8 +872,10 @@ header {
 }
 
 .goal {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* display: flex;
+  flex-wrap: wrap; */
   gap: 1rem;
   margin-top: 1rem;
   padding: 1rem;
@@ -897,11 +899,11 @@ header {
 .value > ul > li {
   list-style: disc;
   margin-left: 1rem;
+  margin-bottom: 1rem;
   /* display: block; */
 }
 
 .experience-description > ul > li {
-  margin-bottom: 1rem;
   line-height: normal;
   /* display: block; */
 }
@@ -1158,6 +1160,9 @@ footer > p > a {
   }
   .mini-navbar {
     display: none;
+  }
+  .goal {
+    grid-template-columns: 1fr;
   }
 }
 
