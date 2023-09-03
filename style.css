@@ -915,14 +915,6 @@ header {
   /* border: 2px solid blue; */
 }
 
-.button-container {
-  /* flex: 1; */
-  /* border: 2px solid black; */
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-}
-
 .button-container > button {
   padding: 1rem 2rem;
   font-family: var(--heading-font);
