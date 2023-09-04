@@ -34,6 +34,7 @@
 
   --pink: #e01b6f;
   --light-pink: #ff94a2;
+  --background-color: #f8fafd;
   --border-color: #ebe9ef;
   --mini-background-color: #f9f9f9;
 }
@@ -110,7 +111,6 @@ i {
   scroll-margin-top: 5rem;
 }
 
-.project-individual-container,
 .get-in-touch-container,
 .background {
   border-radius: 0.625rem;
@@ -415,7 +415,7 @@ header {
   font-family: var(--heading-font);
   margin-top: 1rem;
   border-radius: 1rem;
-  background-color: #f8fafd;
+  background-color: var(--background-color);
   flex-grow: 1;
   flex-basis: 450px;
   /* background-color: pink; */
@@ -571,7 +571,7 @@ header {
   height: 6.5rem; */
   border-radius: 1rem;
   /* background-color: pink; */
-  background-color: var(--mini-background-color);
+  background-color: var(--background-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -624,10 +624,10 @@ header {
 
 .project-individual-container {
   border-radius: 0.5rem;
-  flex: 0 1 25rem;
+  flex: 0 1 26rem;
   display: flex;
   flex-direction: column;
-  /* background-color: #4285f4; */
+  background-color: var(--background-color);
 }
 
 .portfolio-description {
@@ -679,18 +679,25 @@ header {
 .project-image {
   width: 100%;
   height: 250px;
+
   /* margin: 5px 1px 1px 0; */
 }
 
 .medgrocer-image {
   height: 250px;
-  /* text-align: center; */
+}
+
+.project-image,
+.medgrocer-container {
+  background-color: var(--secondary-color);
+  border-radius: 0.625rem;
+  border: 2px solid var(--border-color);
 }
 
 .medgrocer-container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .portfolio-title {
