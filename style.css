@@ -842,6 +842,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 1rem;
+  gap: 1rem;
 }
 
 .right-detail {
@@ -868,7 +869,8 @@ header {
 .case-details > h4 {
   margin-top: 1rem;
   font-weight: 700;
-  font-size: var(--font-size-base);
+  font-family: var(--heading-font);
+  font-size: var(--font-size-md);
 }
 
 .case-details > p {
@@ -890,6 +892,8 @@ header {
   display: flex;
   justify-content: center;
   align-content: center;
+  border-radius: 0.625rem;
+  border: 2px solid var(--border-color);
 }
 
 .background {
