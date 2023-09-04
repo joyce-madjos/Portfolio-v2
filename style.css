@@ -867,14 +867,32 @@ header {
 
 .background {
   /* margin-top: 1rem; */
+  gap: 1rem;
   padding: 1rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  text-align: justify;
 }
 
-.background > p > em {
+.background em {
   color: #0d6e6e;
   font-weight: bold;
+}
+
+.background h4 {
+  /* border: 2px solid black; */
+  font-size: var(--font-size-base);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.about-medgrocer p:nth-child(2) {
+  margin-bottom: 1rem;
+}
+
+.about-medgrocer li {
+  list-style-type: lower-alpha;
+  margin: 1rem 0 0 4rem;
 }
 
 .goal {
@@ -1167,7 +1185,8 @@ footer > p > a {
   .mini-navbar {
     display: none;
   }
-  .goal {
+  .goal,
+  .background {
     grid-template-columns: 1fr;
   }
 }
