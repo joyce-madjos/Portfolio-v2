@@ -858,7 +858,7 @@ header {
 .case-container {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
   gap: 1rem;
 }
 
