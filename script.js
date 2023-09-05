@@ -1,6 +1,8 @@
 let body = document.getElementsByTagName("body");
 let sidebar = document.getElementById("mySidenav");
 let trigram = document.getElementById("menu");
+let seeMoreButton = document.getElementById("see-more-prod-button");
+let showLess = document.getElementById("see-less-prod-button");
 
 function openNav() {
   sidebar.style.display = "block";
@@ -21,4 +23,36 @@ trigram.addEventListener("click", () => {
   } else {
     openNav();
   }
+});
+
+function seeMore() {
+  seeMoreButton.style.display = "none";
+  showLess.style.display = "block";
+  // let elements = document.querySelectorAll("#see-more-prod");
+  // elements.forEach(function (element) {
+  //   element.style.display = "list-item";
+  // });
+}
+
+function seeLess() {
+  showLess.style.display = "none";
+  seeMoreButton.style.display = "block";
+}
+
+let buttonProdEngMore = document.querySelector("#see-more-prod-button");
+
+buttonProdEngMore.addEventListener("click", function () {
+  let elements = document.querySelectorAll("#see-more-prod");
+  elements.forEach(function (element) {
+    element.style.display = "list-item";
+  });
+});
+
+let buttonProdEngLess = document.querySelector("#see-less-prod-button");
+
+buttonProdEngLess.addEventListener("click", function () {
+  let elements = document.querySelectorAll("#see-more-prod");
+  elements.forEach(function (element) {
+    element.style.display = "none";
+  });
 });

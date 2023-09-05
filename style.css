@@ -1069,6 +1069,7 @@ header {
   text-align: center;
   /* padding: 0.5rem; */
   /* cursor: pointer; */
+  /* list-style: disc; */
 }
 
 .see-more-arrow > button {
@@ -1078,6 +1079,10 @@ header {
 }
 
 .see-more-show {
+  display: none;
+}
+
+#see-less-prod-button {
   display: none;
 }
 
