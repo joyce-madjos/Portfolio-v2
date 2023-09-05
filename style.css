@@ -1064,6 +1064,23 @@ header {
   /* display: block; */
 }
 
+.experience-description > ul > .see-more-arrow {
+  list-style: none;
+  text-align: center;
+  /* padding: 0.5rem; */
+  /* cursor: pointer; */
+}
+
+.see-more-arrow > button {
+  /* background-color: yellow; */
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.see-more-show {
+  display: none;
+}
+
 .solution {
   margin-top: 2rem;
   font-family: var(--regular-font);
