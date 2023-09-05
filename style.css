@@ -790,7 +790,7 @@ header {
   /* height: 200px; */
   /* margin-top: 1rem; */
   /* background-color: aqua; */
-  background-color: #f8fafd;
+  background-color: var(--background-color);
   border-radius: 1rem;
   flex-grow: 0;
   flex-basis: 300px;
@@ -836,7 +836,7 @@ header {
 
 .case-study-page-title {
   font-family: var(--heading-font);
-  width: 30ch;
+  width: min(30ch, 100%);
   font-size: var(--font-size-md);
   margin: 0;
   font-weight: 700;
@@ -876,11 +876,19 @@ header {
   flex-basis: 30%;
   flex-grow: 1;
   /* text-align: justify; */
-  border: 2px solid orange;
+  /* border: 2px solid orange; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
+}
+
+.hero-case-study {
+  justify-content: flex-start;
+}
+
+.mobile {
+  display: none;
 }
 
 .case-details > h4 {
@@ -903,7 +911,7 @@ header {
 }
 
 .case-mini-details-individual-container {
-  background-color: yellow;
+  background-color: var(--background-color);
   /* width: 220px; */
   /* height: 120px; */
   flex: 1 0 220px;
@@ -1321,6 +1329,12 @@ footer > p > a {
   .goal,
   .background {
     grid-template-columns: 1fr;
+  }
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
   }
 }
 
