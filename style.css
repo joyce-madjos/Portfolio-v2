@@ -1083,7 +1083,8 @@ header {
 }
 
 #see-less-prod-button,
-#see-less-ui-button {
+#see-less-ui-button,
+#see-less-admin-button {
   display: none;
 }
 

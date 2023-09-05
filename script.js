@@ -50,7 +50,7 @@ buttonProdEngLess.addEventListener("click", function () {
   buttonProdEngMore.style.display = "block";
 });
 
-// UI/UX Designer Buttons
+// UI/UX Designer Experience Buttons
 let buttonUIMore = document.querySelector("#see-more-ui-button");
 let buttonUILess = document.querySelector("#see-less-ui-button");
 
@@ -75,4 +75,31 @@ buttonUILess.addEventListener("click", function () {
 
   buttonUILess.style.display = "none";
   buttonUIMore.style.display = "block";
+});
+
+// Web Admin Experience Buttons
+let buttonAdminMore = document.querySelector("#see-more-admin-button");
+let buttonAdminLess = document.querySelector("#see-less-admin-button");
+
+// More
+buttonAdminMore.addEventListener("click", function () {
+  let elements = document.querySelectorAll("#see-more-admin");
+
+  elements.forEach(function (element) {
+    element.style.display = "list-item";
+  });
+
+  buttonAdminMore.style.display = "none";
+  buttonAdminLess.style.display = "block";
+});
+
+// Less
+buttonAdminLess.addEventListener("click", function () {
+  let elements = document.querySelectorAll("#see-more-admin");
+  elements.forEach(function (element) {
+    element.style.display = "none";
+  });
+
+  buttonAdminLess.style.display = "none";
+  buttonAdminMore.style.display = "block";
 });
