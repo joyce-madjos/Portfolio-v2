@@ -373,8 +373,9 @@ header {
   display: flex;
   align-items: center;
   padding: 1rem;
+  background-color: var(--background-color);
   /* border: 3px solid pink; */
-  /* border-radius: 1rem; */
+  border-radius: 1rem;
 }
 
 .school-logo > img {
