@@ -23,7 +23,7 @@ trigram.addEventListener("click", () => {
   }
 });
 
-// Product Engineer Experience Buttons
+// ----Product Engineer Experience Buttons----
 let buttonProdEngMore = document.querySelector("#see-more-prod-button");
 let buttonProdEngLess = document.querySelector("#see-less-prod-button");
 
@@ -50,7 +50,7 @@ buttonProdEngLess.addEventListener("click", function () {
   buttonProdEngMore.style.display = "block";
 });
 
-// UI/UX Designer Experience Buttons
+// ----UI/UX Designer Experience Buttons----
 let buttonUIMore = document.querySelector("#see-more-ui-button");
 let buttonUILess = document.querySelector("#see-less-ui-button");
 
@@ -77,7 +77,7 @@ buttonUILess.addEventListener("click", function () {
   buttonUIMore.style.display = "block";
 });
 
-// Web Admin Experience Buttons
+// ----Web Admin Experience Buttons----
 let buttonAdminMore = document.querySelector("#see-more-admin-button");
 let buttonAdminLess = document.querySelector("#see-less-admin-button");
 
