@@ -1,8 +1,6 @@
 let body = document.getElementsByTagName("body");
 let sidebar = document.getElementById("mySidenav");
 let trigram = document.getElementById("menu");
-let seeMoreButton = document.getElementById("see-more-prod-button");
-let showLess = document.getElementById("see-less-prod-button");
 
 function openNav() {
   sidebar.style.display = "block";
@@ -25,34 +23,56 @@ trigram.addEventListener("click", () => {
   }
 });
 
-function seeMore() {
-  seeMoreButton.style.display = "none";
-  showLess.style.display = "block";
-  // let elements = document.querySelectorAll("#see-more-prod");
-  // elements.forEach(function (element) {
-  //   element.style.display = "list-item";
-  // });
-}
-
-function seeLess() {
-  showLess.style.display = "none";
-  seeMoreButton.style.display = "block";
-}
-
+// Product Engineer Experience Buttons
 let buttonProdEngMore = document.querySelector("#see-more-prod-button");
+let buttonProdEngLess = document.querySelector("#see-less-prod-button");
 
+// More
 buttonProdEngMore.addEventListener("click", function () {
   let elements = document.querySelectorAll("#see-more-prod");
+
   elements.forEach(function (element) {
     element.style.display = "list-item";
   });
+
+  buttonProdEngMore.style.display = "none";
+  buttonProdEngLess.style.display = "block";
 });
 
-let buttonProdEngLess = document.querySelector("#see-less-prod-button");
-
+// Less
 buttonProdEngLess.addEventListener("click", function () {
   let elements = document.querySelectorAll("#see-more-prod");
   elements.forEach(function (element) {
     element.style.display = "none";
   });
+
+  buttonProdEngLess.style.display = "none";
+  buttonProdEngMore.style.display = "block";
+});
+
+// UI/UX Designer Buttons
+let buttonUIMore = document.querySelector("#see-more-ui-button");
+let buttonUILess = document.querySelector("#see-less-ui-button");
+
+// More
+buttonUIMore.addEventListener("click", function () {
+  let elements = document.querySelectorAll("#see-more-ui");
+
+  elements.forEach(function (element) {
+    element.style.display = "list-item";
+  });
+
+  buttonUIMore.style.display = "none";
+  buttonUILess.style.display = "block";
+});
+
+// Less
+buttonUILess.addEventListener("click", function () {
+  let elements = document.querySelectorAll("#see-more-ui");
+  elements.forEach(function (element) {
+    element.style.display = "none";
+  });
+
+  buttonUILess.style.display = "none";
+  buttonUIMore.style.display = "block";
 });

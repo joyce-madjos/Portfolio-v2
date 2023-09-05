@@ -1082,7 +1082,8 @@ header {
   display: none;
 }
 
-#see-less-prod-button {
+#see-less-prod-button,
+#see-less-ui-button {
   display: none;
 }
 
