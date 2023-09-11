@@ -34,6 +34,7 @@
 
   --pink: #e01b6f;
   --light-pink: #ff94a2;
+  --nav-background: #fec7cd;
   --background-color: #f8fafd;
   --border-color: #ebe9ef;
   --mini-background-color: #f9f9f9;
@@ -149,8 +150,8 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: var(--light-pink);
-
+  background-color: var(--nav-background);
+  margin-right: 1rem;
   flex-grow: 1;
   /* margin-top: 1rem; */
   border-radius: 1.875rem;
