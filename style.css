@@ -1383,6 +1383,9 @@ footer > p > a {
   nav {
     background-color: white;
   }
+  header {
+    top: 0;
+  }
 }
 
 @media screen and (max-width: 1440px) {
