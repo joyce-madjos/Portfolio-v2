@@ -24,18 +24,20 @@
   </head>
   <body>
     <header>
+      <a class="my-logo-container" href="index.html">
+        <img
+          class="my-logo"
+          src="assets/images/my-logo.png"
+          alt="Logo"
+          loading="lazy"
+        />
+      </a>
       <nav>
-        <a class="my-logo-container" href="index.html">
-          <img
-            class="my-logo"
-            src="assets/images/my-logo.png"
-            alt="Logo"
-            loading="lazy"
-          />
-        </a>
-        <a class="nav-button" href="index.html">About Me</a>
+        <a class="nav-button" href="#about-me">About Me</a>
         <a class="nav-button" href="project.html">Projects</a>
-        <a class="nav-button nav-button-active" href="#">Case Study</a>
+        <a class="nav-button nav-button-active" href="case-study.html"
+          >Case Study</a
+        >
         <a class="nav-button" href="index.html#get-in-touch">Get in touch</a>
         <!-- <span class="trigram" onclick="openNav()">&#9776;</span> -->
         <input
@@ -43,6 +45,7 @@
           type="checkbox"
           role="button"
           aria-label="Display the menu"
+          aria-pressed="true"
           class="menu"
         />
       </nav>
