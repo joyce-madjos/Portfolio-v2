@@ -1221,7 +1221,7 @@ textarea {
   text-decoration: none;
   color: var(--primary-color);
   font-family: var(--heading-font);
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-sm);
 }
 
 .mini-navbar > a {
@@ -1290,7 +1290,7 @@ footer {
 footer > p {
   font-family: var(--regular-font);
   font-weight: 700;
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-sm);
   /* margin-right: auto; */
   margin: 0 1rem;
   /* border: 2px solid pink; */
