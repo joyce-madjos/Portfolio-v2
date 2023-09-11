@@ -353,7 +353,7 @@ header {
 
 .poem {
   font-family: var(--regular-font);
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-base);
   margin: 1rem 0;
   /* margin: 0; */
   /* border: 1px solid green; */
@@ -1316,6 +1316,9 @@ footer > p > a {
     /* width: min(350px, 100%); */
     background: none;
     background: rgba(255, 255, 255, 0.5);
+  }
+  .poem {
+    font-size: var(--font-size-sm);
   }
   .left-text {
     text-align: right;
