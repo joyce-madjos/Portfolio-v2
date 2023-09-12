@@ -710,20 +710,25 @@ header {
   /* height: 11px; */
 }
 
+.project-image-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #e01b6f; */
+}
+
 .project-image {
   width: 100%;
-  height: 250px;
-
-  /* margin: 5px 1px 1px 0; */
+  height: auto;
+  /* border: 2px solid black; */
 }
 
-.medgrocer-image {
-  height: 250px;
-}
-
-.project-image,
+.project-image-container,
 .medgrocer-container {
-  background-color: var(--secondary-color);
+  height: 250px;
+  /* background-color: var(--secondary-color); */
   border-radius: 0.625rem;
   border: 2px solid var(--border-color);
 }
@@ -819,8 +824,8 @@ header {
   /* border: 2px solid var(--border-color);
   color: var(--primary-color);
   display: flex; */
-  /* height: 250px; */
-  /* width: 250px; */
+  /* height: 250px;
+  width: 250px; */
   padding: 1rem;
   border-radius: 1rem;
 }
