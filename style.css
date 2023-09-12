@@ -722,6 +722,7 @@ header {
 .project-image {
   width: 100%;
   height: auto;
+  /* border-radius: 1rem; */
   /* border: 2px solid black; */
 }
 
@@ -737,6 +738,11 @@ header {
   display: flex;
   justify-content: center;
   /* align-items: center; */
+}
+
+.medgrocer-image {
+  width: 100%;
+  height: auto;
 }
 
 .portfolio-title {
