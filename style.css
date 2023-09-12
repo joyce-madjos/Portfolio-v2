@@ -704,6 +704,10 @@ header {
   /* background-color: yellow; */
 }
 
+.icons a {
+  color: #0000ee;
+}
+
 .fa-solid {
   color: var(--pink);
   margin-left: 0.2rem;
@@ -832,8 +836,17 @@ header {
   display: flex; */
   /* height: 250px;
   width: 250px; */
-  padding: 1rem;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-content: center;
   border-radius: 1rem;
+}
+
+.mini-case-image > img {
+  width: 100%;
+  height: auto;
+  /* border: 2px solid blue; */
 }
 
 .mini-case-description {
