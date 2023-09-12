@@ -1256,6 +1256,11 @@ textarea {
   font-size: var(--font-size-sm);
 }
 
+.social-links > a:hover {
+  color: #0000ee;
+  text-decoration: underline;
+}
+
 .mini-navbar > a {
   display: block;
   margin: 1rem 0;
