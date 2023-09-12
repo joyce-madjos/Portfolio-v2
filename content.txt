@@ -1,0 +1,21 @@
+Languages: C, C#, Java MATLAB
+Design: Figma, Canva
+Technologies: Git, Firebase, WordPress
+Testing: Jest, React Testing Library
+
+PhilHealth-Reporting-System
+WPF-App-Record-Management
+Grade-Calculator (transfrom into web app)
+Enrollment-Form (roswell univ)
+Personal website
+e commerce webiste
+WPFapp(Calculator)
+BHCSEO for Cryptanalysis of RC4
+Etch-A-Sketch
+Calculator(javascript)
+Library
+tic tac toe
+portfolio v1 and v2
+
+
+An integration of two metaheuristics algorithms - Cuckoo Search Algorithm and Equilibrium Optimizer to attack the internal state of RC4, which aims to contribute further to the current growing cyberattack prevention methods.

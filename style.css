@@ -1371,8 +1371,9 @@ footer > p > a {
     width: 100%;
   }
   .my-logo {
-    margin-right: auto;
-    margin-left: 1rem;
+    margin: 1rem auto 0 1rem;
+    /* margin-right: auto;
+    margin-left: 1rem; */
   }
   .menu {
     display: block;
@@ -1400,6 +1401,7 @@ footer > p > a {
   }
   header {
     top: 0;
+    border-bottom: 2px solid var(--border-color);
   }
   footer {
     flex-direction: column;
