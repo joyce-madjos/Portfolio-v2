@@ -58,6 +58,10 @@ p {
   line-height: normal;
 }
 
+a {
+  color: #0000ee;
+}
+
 .show-all-projects {
   text-decoration: none;
   color: var(--pink);
@@ -702,10 +706,6 @@ header {
   /* right: 10px; */
   /* bottom: 10px; */
   /* background-color: yellow; */
-}
-
-.icons a {
-  color: #0000ee;
 }
 
 .fa-solid {
