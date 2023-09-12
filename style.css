@@ -799,8 +799,8 @@ header {
 .case-study-column {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
-  align-items: flex-start;
+  gap: 1rem;
+  align-items: center;
 }
 
 .mini-case-container {
@@ -862,6 +862,7 @@ header {
   padding: 1rem 1.5rem;
   flex-grow: 1;
   flex-basis: 600px;
+  /* height: 100%; */
   /* border-radius: 1rem; */
   /* background-color: green; */
   /* display: flex; */
@@ -1451,6 +1452,9 @@ footer > p > a {
   }
   .case-container {
     grid-template-columns: 1fr;
+  }
+  .case-study-column {
+    align-items: flex-start;
   }
 }
 
