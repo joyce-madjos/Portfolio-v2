@@ -511,11 +511,6 @@ header {
   font-size: var(--font-size-base);
 }
 
-.title > h3,
-.title > p {
-  /* margin: 0; */
-}
-
 .title > p {
   font-family: var(--regular-font);
   font-size: var(--font-size-sm);
@@ -1187,19 +1182,9 @@ footer > p > a {
   .sidenav {
     padding-top: 15px;
   }
-  .sidenav a {
-    /* font-size: 18px; */
-  }
-  .hero-box {
-    /* width: 100%; */
-  }
 }
 
 @media screen and (max-width: 768px) {
-  .hero {
-    /* margin: 0; */
-    /* border-radius: 0; */
-  }
   .hero-box {
     box-shadow: none;
     margin: 0.5rem auto;
