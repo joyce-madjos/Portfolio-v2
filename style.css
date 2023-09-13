@@ -1272,6 +1272,7 @@ footer > p > a {
   }
   footer {
     flex-direction: column;
+    padding: 1rem 0;
   }
   .links {
     order: 1;
