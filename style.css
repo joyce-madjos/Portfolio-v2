@@ -142,7 +142,6 @@ main {
 nav {
   font-family: var(--heading-font);
   font-weight: 600;
-  /* padding: 0.5rem; */
   flex-shrink: 1;
   display: flex;
   justify-content: space-around;
@@ -150,8 +149,10 @@ nav {
   background-color: var(--nav-background);
   margin-right: 1rem;
   flex-grow: 1;
-  /* margin-top: 1rem; */
   border-radius: 1.875rem;
+  /* padding-top: 1rem; */
+  /* margin-top: 0; */
+  /* padding: 0.5rem; */
   /* border: 1px solid black; */
   /* width: 100%;
   position: sticky;
@@ -168,11 +169,13 @@ header {
   top: 5px;
   display: flex;
   /* margin: 5rem 0; */
+  /* background-color: yellow; */
   background-color: var(--secondary-color);
   margin: 1rem 0;
 }
 
 .menu {
+  /* background-color: #e01b6f; */
   display: none;
   --s: 30px; /* control the size */
   --c: var(--pink); /* the color */
@@ -1263,6 +1266,7 @@ footer > p > a {
     background-color: white;
   }
   header {
+    margin: 0;
     top: 0;
     border-bottom: 2px solid var(--border-color);
   }
