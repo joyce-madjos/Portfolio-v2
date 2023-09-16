@@ -85,11 +85,12 @@ i {
   margin: 3rem 0 2rem 0;
 }
 
-.case-study-heading {
+.case-study-heading,
+.project-heading {
   font-family: var(--heading-font);
   font-size: var(--font-size-lg);
   font-weight: 700;
-  margin-bottom: 2rem;
+  margin: 1rem 0 2rem 0;
 }
 
 .challenge-heading {
