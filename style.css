@@ -119,6 +119,10 @@ i {
   /* margin-bottom: 2rem; */
 }
 
+.project-page {
+  margin-top: 2rem;
+}
+
 .project-subheading {
   font-family: var(--heading-font);
   font-size: var(--font-size-md);
@@ -868,7 +872,7 @@ header {
   /* display: flex; */
   /* flex: 0 1 30rem; */
   /* flex-wrap: wrap; */
-  margin: 1rem 0;
+  margin: 2rem 0 1rem 0;
   gap: 1rem;
 }
 
