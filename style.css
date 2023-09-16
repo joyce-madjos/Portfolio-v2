@@ -277,7 +277,8 @@ header {
 
   /* border-bottom: 2px solid var(--border-color); */
 }
-.sidebar-button:hover {
+.sidebar-button:hover,
+.sidebar-active {
   color: var(--pink);
   font-size: var(--font-size-xxl);
 
