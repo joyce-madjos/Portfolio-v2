@@ -1181,16 +1181,6 @@ footer > p > a {
   /* color: var(--accent); */
 }
 
-@media screen and (max-width: 350px) {
-  .hero-box {
-    width: 100%;
-    /* margin: 0.5rem; */
-    /* box-shadow: none; */
-    /* background: rgba(255, 255, 255, 0.5); */
-    /* /* box-shadow: none; */
-  }
-}
-
 @media screen and (max-width: 500px) {
   .sidenav {
     padding-top: 15px;
@@ -1322,5 +1312,15 @@ footer > p > a {
   }
   .sidebar-container {
     display: none;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .hero-box {
+    width: 100%;
+    /* margin: 0.5rem; */
+    /* box-shadow: none; */
+    /* background: rgba(255, 255, 255, 0.5); */
+    /* /* box-shadow: none; */
   }
 }
