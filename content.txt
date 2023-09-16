@@ -3,7 +3,7 @@ Design: Figma, Canva
 Technologies: Git, Firebase, WordPress
 Testing: Jest, React Testing Library
 
-PhilHealth-Reporting-System
+PhilHealth-Reporting-System ++
 WPF-App-Record-Management
 Grade-Calculator (transfrom into web app)
 Enrollment-Form (roswell univ)
@@ -16,6 +16,7 @@ Calculator(javascript)
 Library
 tic tac toe
 portfolio v1 and v2
+ADD: SOMETHING WITH CRUD!!!
 
 
 An integration of two metaheuristics algorithms - Cuckoo Search Algorithm and Equilibrium Optimizer to attack the internal state of RC4, which aims to contribute further to the current growing cyberattack prevention methods.
