@@ -1279,6 +1279,7 @@ footer > p > a {
   }
   header {
     margin: 0;
+    margin-bottom: 0.25rem;
     top: 0;
     border-bottom: 2px solid var(--border-color);
   }
