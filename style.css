@@ -119,6 +119,18 @@ i {
   /* margin-bottom: 2rem; */
 }
 
+.project-border {
+  /* border: 2px solid black; */
+  border-bottom: 2px solid var(--border-color);
+}
+
+.project-subheading {
+  font-family: var(--heading-font);
+  font-size: var(--font-size-md);
+  font-weight: 400;
+  margin: 2rem 1rem 1rem 1rem;
+}
+
 .subheadings {
   font-family: var(--heading-font);
   font-size: var(--font-size-md);
@@ -629,6 +641,7 @@ header {
   /* justify-content: space-between; */
   flex-wrap: wrap;
   gap: 1rem;
+  padding-bottom: 1rem;
 }
 
 .project-individual-container {
