@@ -119,11 +119,6 @@ i {
   /* margin-bottom: 2rem; */
 }
 
-.project-border {
-  /* border: 2px solid black; */
-  border-bottom: 2px solid var(--border-color);
-}
-
 .project-subheading {
   font-family: var(--heading-font);
   font-size: var(--font-size-md);
