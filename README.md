@@ -1,5 +1,10 @@
-# Portfolio-v2
+# Portfolio v2
 
-Images used:
+Second iteration of handcrafted original design and personally hardcoded portfolio website, created from scratch. A reflection of love for web development and commitment to excellence. 
 
-<a href="https://www.freepik.com/free-vector/mobile-testing-concept-illustration_7230644.htm#query=UX%20testing&position=7&from_view=search&track=ais">Image by storyset</a> on Freepik
+ <ul>
+        <li>Figma</li>
+        <li>HTML</li>
+        <li>Vanilla CSS</li>
+        <li>Vanilla JavaScript</li>
+      </ul>
